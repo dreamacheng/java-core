@@ -13,6 +13,8 @@ import java.util.List;
 
 /**
  * desc: 同步模式： 保护性暂停
+ * JDK 中，join 的实现、Future 的实现，采用的就是此模式
+ *
  */
 @Slf4j
 public class GuardedSuspension {
