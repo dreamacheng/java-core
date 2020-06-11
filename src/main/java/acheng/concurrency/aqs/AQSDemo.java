@@ -102,7 +102,7 @@ class SpecLock implements Lock {
         @Override
         protected boolean tryRelease(int arg) {
             setExclusiveOwnerThread(null);
-            // state被 volatile 修饰， 由写屏障保证指令重排序
+            // state被 volatile 修饰， 由写屏障保证指令不重排序
             setState(0);
             return true;
         }
