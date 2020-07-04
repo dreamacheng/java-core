@@ -1,4 +1,4 @@
-package acheng.concurrency.cas;
+package acheng.core.cas;
 
 import lombok.Getter;
 import lombok.ToString;

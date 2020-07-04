@@ -1,7 +1,4 @@
-package acheng.concurrency.cas;
-
-import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+package acheng.core.cas;
 
 import java.util.LinkedList;
 import java.util.List;

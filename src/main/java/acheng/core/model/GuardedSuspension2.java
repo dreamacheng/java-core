@@ -1,8 +1,7 @@
-package acheng.concurrency.model;
+package acheng.core.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.Synchronized;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Hashtable;

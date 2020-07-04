@@ -1,11 +1,9 @@
-package acheng.concurrency.cas;
+package acheng.core.cas;
 
 import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicMarkableReference;
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicStampedReference;
 
 public class AtomicReferenceDemo {
 

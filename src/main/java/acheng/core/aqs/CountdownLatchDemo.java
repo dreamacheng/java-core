@@ -1,4 +1,4 @@
-package acheng.concurrency.aqs;
+package acheng.core.aqs;
 
 import java.util.Arrays;
 import java.util.Random;

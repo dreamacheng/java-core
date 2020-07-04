@@ -1,4 +1,4 @@
-package acheng.concurrency.model;
+package acheng.core.model;
 
 import java.util.concurrent.locks.LockSupport;
 

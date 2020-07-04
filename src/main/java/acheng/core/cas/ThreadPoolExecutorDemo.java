@@ -1,4 +1,4 @@
-package acheng.concurrency.cas;
+package acheng.core.cas;
 
 import lombok.extern.slf4j.Slf4j;
 
