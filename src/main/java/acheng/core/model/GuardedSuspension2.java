@@ -52,13 +52,13 @@ class GuardedObject2 {
             while (response == null) {
                 long waitTime = mills - timePassed;
                 if (waitTime <= 0) {
-                    log.debug("攒够失望就离开");
+                    log.debug("等待时间完毕");
                     break;
                 }
                 try {
                     log.debug("wait notify, 继续等待时间：{}", waitTime);
                     this.wait(waitTime);
-                    log.debug("终于等到你，康康结果：{}", response);
+                    log.debug("获取响应：{}", response);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

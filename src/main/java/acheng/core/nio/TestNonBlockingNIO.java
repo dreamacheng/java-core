@@ -1,13 +1,12 @@
 package acheng.core.nio;
 
+import lombok.Synchronized;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.*;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.time.LocalTime;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -25,7 +24,7 @@ public class TestNonBlockingNIO {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
             String next = scanner.next();
-            buffer.put((LocalTime.now() + "=> str: " + next).getBytes());
+            buffer.put((LocalTime.now() + "===> str: " + next).getBytes());
             buffer.flip();
             socketChannel.write(buffer);
             buffer.clear();

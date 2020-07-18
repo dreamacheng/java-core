@@ -2,6 +2,7 @@ package acheng.core.model;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -17,7 +18,7 @@ public class JDKPoolAnalyze {
          *  当核心线程数达到最大线程数，再次提交的任务放入queue等待
          *  当任务提交过多，堆积大量任务，OOM
          */
-//        ExecutorService pool = Executors.newFixedThreadPool(5);
+        ExecutorService pool = Executors.newFixedThreadPool(5);
 
         /**
          * 构造方法： 核心线程数为零，最大线程数为 Integer.MAX_VALUE， 最大空闲时间 60s

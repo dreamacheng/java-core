@@ -30,7 +30,7 @@ public class GuardedSuspension {
         new Thread(() -> {
             log.debug("开始链接资源");
             List<String> strings = connectCDUT();
-            log.debug("虚晃一手");
+            log.debug("虚假唤醒");
             guardedObject.complete(null);
             try {
                 Thread.sleep(2000);
@@ -75,13 +75,13 @@ class GuardedObject {
             while (response == null) {
                 long waitTime = mills - timePassed;
                 if (waitTime <= 0) {
-                    log.debug("攒够失望就离开");
+                    log.debug("等待时间完毕");
                     break;
                 }
                 try {
                     log.debug("wait notify, 继续等待时间：{}", waitTime);
                     lock.wait(waitTime);
-                    log.debug("终于等到你，康康结果：{}", response);
+                    log.debug("获取响应：{}", response);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
