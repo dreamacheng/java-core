@@ -1,4 +1,4 @@
-package acheng.core.cas;
+package acheng.core.model;
 
 import lombok.Getter;
 import lombok.ToString;
